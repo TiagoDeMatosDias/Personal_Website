@@ -26,7 +26,7 @@
     <div class="container">
       <nav class="navbar navbar-expand-md">
         <a class="navbar-brand" href="index.html">
-          <img src="./img/img_logo.png" height="50" alt="image">
+          <img src="{{ url_for('static', filename='img_logo.png') }}" height="50" alt="image">
         </a>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav1" aria-controls="navbarNav1" aria-expanded="false" aria-label="Toggle navigation">
@@ -88,7 +88,7 @@
 
       <div class="row text-right align-items-center-lg align-items-end pt-5">
         <div class="col-7 col-sm-4 m-auto mb-md-0 mt-md-0 m-lg-auto">
-          <img alt="image" class="img-fluid br-b-0" src="./img/photo.jpg">
+          <img alt="image" class="img-fluid br-b-0" src="{{ url_for('static', filename='photo.jpg') }}">
         </div>
 
         <div class="col-12 col-md-7 col-lg-6 col-xl-5 m-auto text-left pt-5 pt-md-0">
@@ -120,19 +120,19 @@
 
       <div class="row text-center justify-content-center mt-5">
         <div class="col-12 col-sm-4 col-xl-3 m-md-auto">
-          <img alt="image" class="fdb-icon" src="./img/train.svg">
+          <img alt="image" class="fdb-icon" src="{{ url_for('static', filename='train.svg') }}">
           <h3><strong>DeutscheBahn</strong></h3>
           <p>Development, Upgrading and Deployment of Business Works projects </p>
         </div>
 
         <div class="col-12 col-sm-4 col-xl-3 m-auto pt-4 pt-sm-0">
-          <img alt="image" class="fdb-icon" src="./img/piggy-bank.svg">
+          <img alt="image" class="fdb-icon" src="{{ url_for('static', filename='piggy-bank.svg') }}">
           <h3><strong>Postbank</strong></h3>
           <p>As part of the operations team, responsible for weekly deployments and troubleshooting using Jenkins</p>
         </div>
 
         <div class="col-12 col-sm-4 col-xl-3 m-auto pt-4 pt-sm-0">
-          <img alt="image" class="fdb-icon" src="./img/university.svg">
+          <img alt="image" class="fdb-icon" src="{{ url_for('static', filename='university.svg.svg') }}">
           <h3><strong>Unit4</strong></h3>
           <p>As part of the Data Migration team, responsible for multi-stage SQL scripting</p>
         </div>
